@@ -1,0 +1,11 @@
+  .marquee_img{
+    width: 20vw;
+    margin-left: 3.5em;
+  }
+
+  @media (max-width: 600px) { 
+      .marquee_img{
+        width: 280px;
+      }
+     }
+ 

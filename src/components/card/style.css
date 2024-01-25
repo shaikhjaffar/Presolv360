@@ -1,0 +1,32 @@
+.stats_card_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    border: 2px solid #FBB04C;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 1em;
+    transition: 0.5s all;
+    flex: 1 ;
+    height:30vh;
+    min-width: 250px;
+    gap:.5em
+}
+.stats_card_wrap svg{
+    width: 40%;
+}
+.stats_card_wrap h3{
+    color: var(--color_1);
+    font-size: 48px;
+}
+.stats_card_wrap:hover{
+    background-color: var(--color_2);
+}
+
+ .stats_card_wrap p{
+    text-align: center;
+ }
+.stats_card_wrap:hover p{
+    color: aliceblue;
+}

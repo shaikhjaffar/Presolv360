@@ -1,0 +1,66 @@
+.event_gallery_wrap{
+   display: grid;
+   grid-template-columns: 40% 40%;
+   gap: 1em;
+    padding: 1em;
+    width: 100%;
+}
+.gallery_child{
+    border-radius: 16px;
+background: #005186;
+box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+text-align:center ;
+color: #ffff;
+
+}
+.gallery_child:first-child,.gallery_child:last-child{
+      background-color: var(--color_1);
+}
+.gallery_child:nth-child(2),.gallery_child:nth-child(3){
+    background-color: var(--color_2);
+}
+.gallery_child img{
+    width: 100%;
+}
+.gallery_child p {
+    padding-bottom:1em,
+}
+.advisory_wrap{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.advisory_wrap .guide_card{
+   width: 340px;
+}
+.job_card_wrap a{
+     text-decoration: none;
+     color: #454545;
+}
+li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 16px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

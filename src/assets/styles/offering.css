@@ -1,0 +1,39 @@
+.offer_advantage_main_wrap{
+      width: 100%;
+      display: flex;
+      height: 400px;
+}
+.offer_adv_title{
+    border: 12px solid var(--Presolv360-Blue, #005186);
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+.offer_adv_title h2{
+    color: var(--Presolv360-Blue, #005186);
+text-align: center;
+
+/* Text Style 13 */
+font-family: Montserrat;
+font-size: 2.5vw;
+font-style: normal;
+font-weight: 800;
+line-height: 160%; /* 76.8px */
+letter-spacing: 3.36px;
+text-transform: uppercase;
+}
+.offer_adv_desc{
+       background-color: #005186;
+       width: 50%;
+       display: grid;
+       place-items:center ;
+}
+.offer_adv_desc p{
+    color: #FFF;
+font-family: Montserrat;
+font-size: 2vw;
+font-style: normal;
+font-weight: 600;
+line-height: 160%; /* 76.8px */
+     width: 80%;
+}

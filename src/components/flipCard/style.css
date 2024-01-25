@@ -1,0 +1,91 @@
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #005186;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 16px;
+  border: 4px solid #005186; 
+}
+.flip-card-back  p{
+    display: flex;
+  align-self: center;
+  padding:0 1em;
+   font-size: 1vw;
+  justify-content: center;
+}
+.flip-card-front h2{
+    color: #454545;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 64px */
+    letter-spacing: -1px; 
+}
+.flip-card-front{
+    background-color: #fff;
+    color: #454545;
+    border-radius: 16px;
+  border: 4px solid #005186;; 
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card:nth-child(odd) .flip-card-inner .flip-card-front{
+    background-color: #fff;
+    color: #454545;
+    border-radius: 16px;
+  border: 4px solid #FBB04C; 
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card:nth-child(odd) .flip-card-inner .flip-card-back{
+    background-color: #FBB04C;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 16px;
+    border: 4px solid #FBB04C; 
+}

@@ -1,0 +1,233 @@
+.aboutPageSection{
+     display: flex;
+     padding: 1em 2em 4em 2em;
+}
+.leftSection{
+    width:50%;
+    display: grid;
+    place-items: center;
+}
+.rightSection{
+     width: 50%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1em;
+       justify-content: center;
+}
+.leftSection img{
+     width: 90%;
+}
+
+ .rightSection p{
+    color: #1E1E1E;
+text-align: justify;
+font-family: Montserrat;
+font-size: 1.3vw;
+font-style: normal;
+font-weight: 500;
+line-height: 160%;
+width: 80%;
+ }
+ .core_value_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2em;
+     align-items: center;
+     justify-content: center;
+     gap: 2em;
+}
+.greyColor_text{
+    color: #454545 !important;
+}
+.milestoneCard{
+    border-radius: 16px;
+    border: 4px solid #FBB04C;  
+    width: 80%;
+    padding: 1em;
+    display: flex;
+    gap: 2.5em;
+}
+.milestonesection{
+     display: grid;
+     place-items: center;
+}
+.milestoneCard h2{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 3.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    padding-left: .5em;
+}
+.milestoneCard p{
+    color: #FFF;
+font-family: Montserrat;
+font-size:1.5vw;
+font-style: normal;
+font-weight: 700;
+line-height: 160%;
+}
+.landing_wrap h3{
+    text-align: center;
+    color: var(--color_1);
+     font-size: 2.5vw;
+font-family: Montserrat;
+font-weight: 600;
+line-height: 160%;
+}
+.career_card{
+    border-radius: 16px;
+border: 2px solid #FBB04C;
+width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 1.5em;
+}
+ .career_card h3{
+    color: #005186;
+font-family: Montserrat;
+font-size: 1.5vw;
+position: relative;
+font-style: normal;
+font-weight: 600;
+line-height: 160%;
+letter-spacing: -1.8px; 
+}
+.career_card p {
+     padding-right: 2em;
+     padding-top: 1em;
+}
+.job_card_wrap{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2em;
+     align-items: center;
+     justify-content: center;
+}
+.arrowsvg_career{
+    position: absolute;
+    top: 55%;
+    right: 15px;
+}
+.life_img_wrap{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.life_img_wrap img{
+     width: 70%;
+}
+.core_mobile_card h3{
+    color: var(--Presolv360-Blue, #005186);
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -1.2px; 
+padding-bottom: 1em;
+}
+.core_mobile_card p {
+    color:  #454545;
+text-align: justify;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 25.6px */
+letter-spacing: -0.8px; 
+padding-bottom: 2em;
+ }
+.Mobile_core_wrap{
+     width: 100%;
+     padding: 1.5em;
+}
+.core_mobile_card {
+     border-bottom: 2px solid #A5A5A5 ;
+     padding-top: 2em;
+}
+.Mobile_milestone_wrap .core_mobile_card h3,.Mobile_milestone_wrap .core_mobile_card p{
+    color: #FFF;
+}
+
+.offeringpage .sliderDots{
+    padding-top: 2em;
+}
+.caseStudy_wrap{
+     width: 100%;
+     display: flex;
+     padding-bottom: 3em;
+} 
+.caseStudy_img img{
+  width: 70%;
+}
+.caseStudy_wrap h2{
+    color: var(--Presolv360-Blue, #005186);
+font-family: Montserrat;
+font-size: 2.5vw;
+font-style: normal;
+font-weight: 600;
+line-height: 140%;
+padding-bottom: 1.5em;
+ }
+.caseStudy_img{  
+      width: 50%;
+      display: grid;
+      place-items: center;
+}
+.caseStudy_content{
+    width: 50%;
+    padding: 2em;
+    padding-top: 3em;
+
+ }
+ .caseStudy_content button{
+    margin-left: 1em;
+ }
+ @media screen and (max-width:600px) {
+    .aboutPage .landing_wrap h1{
+        padding: 0em 1em;
+    }
+    .aboutPage .landing_wrap h3{
+         font-size: 20px;
+         padding: 0em 1em;
+    }
+    .aboutPageSection{
+        flex-direction: column;
+    }
+    .rightSection,.leftSection{
+        width: 100%;
+    }
+    .rightSection p{
+         font-size: 16px;
+         width: 100%;
+         padding-top: 2em;
+    }
+    .aboutPage .firstBreak{
+        background-image: url(../Images/About\ Page\ Mobile\ Gradient.png);
+    }
+    .aboutPage .section_heading{
+        padding-top: 2em;
+    }
+    .careerPage .landing_wrap h3 {
+        font-size: 20px;
+    }
+    .careerPage .section_heading{
+         padding-top: 4em;
+         padding-bottom: 4em;
+    }
+    .career_card h3{
+        font-size: 20px;
+    }
+    .life_img_wrap img{
+        width: 90%;
+    }
+    .life_img_wrap{
+        padding-bottom: 2em;
+    }
+ }
