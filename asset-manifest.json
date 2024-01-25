@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react_home/static/css/main.0c919937.css",
-    "main.js": "/react_home/static/js/main.f980f5c5.js",
+    "main.js": "/react_home/static/js/main.859ee477.js",
     "static/js/765.9b2c7eca.chunk.js": "/react_home/static/js/765.9b2c7eca.chunk.js",
     "static/media/Carrer_img-1.png": "/react_home/static/media/Carrer_img-1.5d7a4e737b302c76b01d.png",
     "static/media/Impact_2.gif": "/react_home/static/media/Impact_2.a6e8d8fc92863d34abf7.gif",
@@ -81,11 +81,11 @@
     "static/media/slick.woff": "/react_home/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/react_home/index.html",
     "main.0c919937.css.map": "/react_home/static/css/main.0c919937.css.map",
-    "main.f980f5c5.js.map": "/react_home/static/js/main.f980f5c5.js.map",
+    "main.859ee477.js.map": "/react_home/static/js/main.859ee477.js.map",
     "765.9b2c7eca.chunk.js.map": "/react_home/static/js/765.9b2c7eca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c919937.css",
-    "static/js/main.f980f5c5.js"
+    "static/js/main.859ee477.js"
   ]
 }
