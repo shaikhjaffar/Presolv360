@@ -1,10 +1,19 @@
 import React, { useEffect, useState } from 'react'
-import Image1 from '../assets/Images/Nego.png'
-import Image2 from '../assets/Images/Mediation.png'
-import Image3 from '../assets/Images/Arbitration.png'
+import Nego1 from '../assets/Images/Property 1=Variant8.png'
+import Nego2 from '../assets/Images/Property 1=Variant7.png'
+import Nego3 from '../assets/Images/Property 1=Nego3.png'
+import Nego4 from '../assets/Images/Property 1=Nego3-1.png'
+import Nego5 from '../assets/Images/Property 1=Nego4.png'
+import Nego6 from '../assets/Images/Property 1=nego6.png'
 import Reveal from '../utils/Reveal'
 import Mobile_offer from '../components/Mobile_offer'
+import ImageSequence from '../components/ImageSequence'
 export default function OfferingSection() {
+   
+  const Data = {
+     image:[Nego1,Nego2,Nego3,Nego4,Nego5,Nego6]
+  }
+
   const [option,setoption] = useState(0)
     function translatehighlight(endpoint){
        const value = {
@@ -66,7 +75,8 @@ export default function OfferingSection() {
                                      <button className='orange_btn'>Learn More</button>
                                     </div>
                                     <div className='offering_right'>
-                                        <img src={Image1} alt='image1'/>
+                                      <ImageSequence data={Data}/>
+                                        {/* <img src={Image1} alt='image1'/> */}
                                         </div>
                             </div>
                           )
@@ -80,7 +90,7 @@ export default function OfferingSection() {
                                      <button className='orange_btn'>Learn More</button>
                                     </div>
                                     <div className='offering_right'>
-                                        <img src={Image2} alt='image1'/>
+                                        <img src={Nego1} alt='image1'/>
                                         </div>
                             </div>
                           )
@@ -93,7 +103,7 @@ export default function OfferingSection() {
                                     <button className='orange_btn'>Learn More</button>
                                    </div>
                                    <div className='offering_right'>
-                                       <img src={Image3} alt='image1'/>
+                                       <img src={Nego1} alt='image1'/>
                                        </div>
                            </div>
                               )

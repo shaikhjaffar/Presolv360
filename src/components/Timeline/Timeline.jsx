@@ -1,61 +1,10 @@
 import './Style.css'
 import React from 'react';
-import Image1 from '../../assets/Images/Mediation/Property 1=Registration.png'
-import Image2 from '../../assets/Images/Mediation/Property 1=Verification.png'
-import Image3 from '../../assets/Images/Mediation/Property 1=Invitation.png'
-import Image4 from '../../assets/Images/Mediation/Property 1=Appointment.png'
-import Image5 from '../../assets/Images/Mediation/Property 1=Data Secured.png'
-import Image6 from '../../assets/Images/Mediation/Property 1=Resolution.png'
-import Image7 from '../../assets/Images/Mediation/Property 1=Settlement.png'
 
-const fields = {
-    years_timeline: [
-        {
-             steps:1,
-           tittle:"Registration of Dispute",
-           description:"Initiate your path to resolution by registering your dispute. Integration, automation, and administrative team will ensure a hassle-free process. ",
-           image:Image1,
-        },
-        {
-            steps :2,
-            tittle:"Verification and Approval",
-           description:"Auto-verification of dispute data to weed out any discrepancy and approval.",
-           image:Image2,
-        },
-        {
-            steps :3,
-            tittle:"Invitation to Mediate and Consent of Parties",
-            description:"An invitation to mediate is transmitted to all disputing parties digitally, and consent to participate is sought.",
-            image:Image3,
-        },
-        {
-            steps :4,
-            tittle:"Appointment of Mediator",
-            description:"Based on the nature, complexity and quantum of dispute a mediator is algorithmically assigned from a broad-based panel of experts.",
-            image:Image4,
-        },
-        {
-            steps :5,
-            tittle:"Secure Data Sharing",
-            description:"Leverage data sharing and other tools to upload and share documents with the intended parties. ",
-            image:Image5,
-        },
-        {
-            steps :6,
-            tittle:"Resolution",
-            description:"Participate in a virtual mediation session facilitated by the mediator via a secure video conferencing application. ",
-            image:Image6,
-        },
-        {
-            steps :7,
-            tittle:"Settlement Agreement",
-            description:"Upon successful resolution, the platform facilitates the execution of the settlement report via secure e-signatures.",
-            image:Image7,
-        }
-    ]
-};
 
-export default function Timeline() {
+
+
+export default function Timeline({fields}) {
     const [yearSelected, setYearSelected] = React.useState(1);
     const [keySelected, setKeySelected] = React.useState(0);
     const { title, years_timeline } = fields;
@@ -85,8 +34,10 @@ export default function Timeline() {
                                     handleOnTimelineClick(e, item.steps, key)
                                 }
                                 id={item.steps}
+                                
                             >
-                                {item.steps}
+                                <span className='steps_indicator'>{item.steps}</span>
+                                
                             </a>
                         </li>
                     ))}

@@ -12,8 +12,6 @@
 .offer_adv_title h2{
     color: var(--Presolv360-Blue, #005186);
 text-align: center;
-
-/* Text Style 13 */
 font-family: Montserrat;
 font-size: 2.5vw;
 font-style: normal;
@@ -37,3 +35,40 @@ font-weight: 600;
 line-height: 160%; /* 76.8px */
      width: 80%;
 }
+.fadeinout
+{
+  animation: fadeinout 5s infinite;
+}
+
+@keyframes fadeinout
+{
+  0%{
+    opacity:0;
+  }
+  50%
+  {
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+  }
+}
+ @media screen and (max-width:600px) {
+    .caseStudy_wrap{
+         flex-direction: column;
+        align-items: center;
+        row-gap: 1em;
+    }
+    .caseStudy_content{
+        width: 100%;
+    }
+    .caseStudy_img{
+        width: 100%;
+    }
+    .caseStudy_wrap h2{
+        font-size: 24px;
+    }
+    .case2{
+         flex-direction: column-reverse;
+    }
+ }

@@ -126,6 +126,7 @@
 	background-color: transparent;
 	transition: 0.5s all;
 	color: #717171;
+	max-width: max-content;
 }
 .blue_btn:hover{
 	background-color: var(--color_1);
@@ -355,31 +356,6 @@ text {
 	/* background-position: center; */
 }
 
-.blue {
-	height: 100vh;
-   background-image: url(../assets/Images/data0.png);
-}
-
-.panel.blue {
-	z-index: auto;
-}
-
-.panel.red {
-	z-index: auto;
-	background-image: url(../assets/Images/data1.png);
-}
-
-.panel.orange {
-	z-index: auto;
-	background-image: url(../assets/Images/data2.png);
-
-}
-
-.panel.purple {
-	z-index: auto;
-	background-image: url(../assets/Images/data3.png);
-
-}
 
 .about_heading{
 padding: 2em;

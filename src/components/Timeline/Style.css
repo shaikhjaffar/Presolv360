@@ -1,3 +1,4 @@
+
 @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -92,12 +93,21 @@ line-height: 160%; /* 38.4px */
     font-size: 12px;
     line-height: 24px;
     color: #005186;
-    margin-top: 43px;
+    margin-top: 23px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    position: relative;
+  }
+  .steps_indicator{
+    display: flex;
+  position: absolute;
+  left: 18px;
+  width: 50px;
+  height: 50px;
+  color: #FBB04C;
   }
   @media (min-width: 900px) {
     .timeline ul li a {
@@ -105,19 +115,24 @@ line-height: 160%; /* 38.4px */
     }
   }
   .timeline ul li a::before {
-    content: "";
+    content: '' ;
     display: flex;
-    width: 20px;
-    height: 20px;
-    background: white;
-    border: 2px solid #005186;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background: #005186;
     border-radius: 50%;
     margin-bottom: 20px;
+    color: #FBB04C;
   }
   .timeline ul li.active a::before {
     background:#FBB04C ;
+    color: #005186;
   }
-  
+  .timeline ul li.active a span{
+     color: #005186;
+  }
   .Timeline_panel {
     display: flex;
   }

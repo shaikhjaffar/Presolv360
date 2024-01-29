@@ -8,12 +8,12 @@ export default function ImageSequence({data}) {
          setInterval(()=>{
             i >= data.image.length -1 ? i=0 : i++
             setImg(data.image[i]) 
-         },data.time ? data.time : 1000)
+         },data.time ? data.time : 5000)
     },[])
 
   return (
     <div className='img_sequence_wrap'>
-        <img src={img} alt={data?.alt} />
+        <img src={img} className='fadeinout' alt={data?.alt} />
     </div>
   )
 }

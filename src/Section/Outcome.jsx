@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Image1 from '../assets/Images/environment.png'
-import Image2 from '../assets/Images/Impact_2.gif'
-import Image3 from '../assets/Images/Impact_3.gif'
 import { inView } from 'framer-motion'
 export default function Outcome() {
 
