@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Presolv360/static/css/main.d24baccc.css",
-    "main.js": "/Presolv360/static/js/main.d399e1bb.js",
+    "main.js": "/Presolv360/static/js/main.321ecd2f.js",
     "static/js/765.9b2c7eca.chunk.js": "/Presolv360/static/js/765.9b2c7eca.chunk.js",
     "static/media/Carrer_img-1.png": "/Presolv360/static/media/Carrer_img-1.5d7a4e737b302c76b01d.png",
     "static/media/Old office.png": "/Presolv360/static/media/Old office.4f38a86f37b0a7ae910d.png",
@@ -100,11 +100,11 @@
     "static/media/slick.woff": "/Presolv360/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Presolv360/index.html",
     "main.d24baccc.css.map": "/Presolv360/static/css/main.d24baccc.css.map",
-    "main.d399e1bb.js.map": "/Presolv360/static/js/main.d399e1bb.js.map",
+    "main.321ecd2f.js.map": "/Presolv360/static/js/main.321ecd2f.js.map",
     "765.9b2c7eca.chunk.js.map": "/Presolv360/static/js/765.9b2c7eca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d24baccc.css",
-    "static/js/main.d399e1bb.js"
+    "static/js/main.321ecd2f.js"
   ]
 }
