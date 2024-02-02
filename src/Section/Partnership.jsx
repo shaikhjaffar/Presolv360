@@ -33,7 +33,7 @@ export default function Partnership() {
   return (
     <div className='section'>
              <div className='section_heading'>
-          <h2 className='blue_heading'>Features and Partnerships</h2>
+          <h2 className='blue_heading'>Media & Awards</h2>
         </div>
          <Marqueee data={data}/>
         </div>

@@ -8,7 +8,7 @@ function Marqueee({data}) {
           {
             data.map((element,index)=>{
                    return (
-                    <img className="marquee_img" key={index} src={element.img} alt={element.alt} />
+                    <img className="marquee_img" key={index} src={element.img} alt={element.img.split('/').splice(-1)} />
                    )
             })
           }

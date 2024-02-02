@@ -26,6 +26,7 @@
 
  .stats_card_wrap p{
     text-align: center;
+    font-weight: 600;
  }
 .stats_card_wrap:hover p{
     color: aliceblue;

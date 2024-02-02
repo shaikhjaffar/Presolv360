@@ -61,6 +61,8 @@ line-height: 160%; /* 76.8px */
     }
     .caseStudy_content{
         width: 100%;
+        padding: 1em;
+    text-align: center;
     }
     .caseStudy_img{
         width: 100%;

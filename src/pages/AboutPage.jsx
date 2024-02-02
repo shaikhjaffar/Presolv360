@@ -1,8 +1,8 @@
 import React from 'react'
 import FounderIMage from '../assets/Images/Founding Team 1.png'
 import Image3 from '../assets/Images/Justice Kannan New.png'
-import Image2 from '../assets/Images/Justice Sri Krishna New.png'
-import Image1 from '../assets/Images/Justice U.U. Lalit New(blue).png'
+import Image2 from '../assets/Images/Justice Sri Krishna New2.png'
+import Image1 from '../assets/Images/Justice U.U. Lalit New.png'
 import Image4 from '../assets/Images/Bhaven Shah.png'
 import Image5 from '../assets/Images/Namita Shah.png'
 import Image6 from '../assets/Images/Aman Shangvi.png'
@@ -17,6 +17,7 @@ import Rajni from '../assets/Images/Late Ms Rajani Iyer.png'
 import Slider from 'react-slick'
 import MileStone_mobile from '../components/MileStone_mobile'
 import Mobile_corevalue from '../components/Mobile_corevalue'
+import AnimatedBox from '../components/AnimatedBox'
 export default function AboutPage() {
 
   const settings = {
@@ -49,7 +50,7 @@ export default function AboutPage() {
       description:"We want to revolutionize. Make a difference. We would rather fail at something meaningful than succeed at something trivial.",
    },
    {
-    tittle:"Creating our own Luck",
+    tittle:"Creating our own luck",
       description:"The best way to make progress is to act.",
    },
    {
@@ -61,7 +62,7 @@ export default function AboutPage() {
       description:'In working together, we maintain a low ego, make everyone feel welcome, assume good intent, trust one another, and seek out different perspectives. We empower our teammates to be at their best. We believe in the principle of "support each other to grow together".',
    },
    {
-    tittle:"Challegene but not overwhelmed",
+    tittle:"Challenged but not overwhelmed",
       description:"We are curious people and learning is our second name. Growth happens outside our comfort zone. We achieve our potential through consistent, manageable growth.",
    },
    {
@@ -83,14 +84,14 @@ export default function AboutPage() {
           window.innerWidth > 600 ?  <h3>
           This remark by a Supreme Court judge was the <br></br> eureka moment which led to the inception of <br>
           </br>
-          <span style={{color:"var(--color_2)"}}> Presolv</span>360
+          Presolv<span style={{color:"var(--color_2)"}}>360</span>
           </h3> : <h3>
           This remark by a Supreme Court judge was the  eureka moment which led to the inception of 
           <br></br>
           <span style={{color:"var(--color_2)"}}> Presolv</span>360
           </h3>
         }
-        
+        <AnimatedBox/>
     </section>
    
     <div className='section_heading'>
@@ -101,7 +102,7 @@ export default function AboutPage() {
           <img src={FounderIMage} alt='FounderiMage'/>
         </div>
         <div className='rightSection'>
-          <p>Heaps of papers, complex procedures, endless causelists, and the echoes of ‘tareekh pe tareekh’ (adjournments) – these are commonplace sights and sounds of Indian courtrooms. Aman, Bhaven, and Namita witnessed these in multiple courtrooms again and again. It was a two-edged sword – while they had to live through the burdens of these inefficiencies, they also inspired them to create change and led to the birth of Presolv360.</p>
+          <p>Heaps of papers, complex procedures, endless causelists, and the echoes of ‘tareekh pe tareekh’ (adjournments) – these are commonplace sights and sounds of Indian courtrooms. Aman, Bhaven, and Namita witnessed these in multiple courtrooms again and again. It was a two-edged sword – while they had to live through the burdens of these inefficiencies, it also inspired them to create change. This led to the birth of Presolv360.</p>
            <p>The tipping point was an incident in one such courtroom, where the judge told Bhaven, “Son, your father filed this case, and it is your child that will continue to fight it.” In that moment, despair turned into determination, and the three friends set out on a journey to change the narrative of dispute resolution.</p>
           <p>Presolv360 thus started with the vision of becoming a global leader in resolving disputes using technology. The heart of the founders’ vision for the company is using a blend of the latest technologies and human ingenuity to craft solutions that revolutionize the global justice landscape.</p>
         </div>
@@ -169,7 +170,7 @@ export default function AboutPage() {
 </svg>
 <div className='milestoneCard'>
    <h2>2022</h2>
-   <p>Incubated by Cyril Amarchand Mangaldas and backed by marquee investors like Omidyar Network India, MGA Ventures</p>
+   <p>Incubated by Cyril Amarchand Mangaldas and backed by marquee investors like ONI, MGA Ventures</p>
 </div>
 <svg width="40" height="96" viewBox="0 0 40 96" fill="none" xmlns="http://www.w3.org/2000/svg">
   <circle cx="20" cy="46" r="20" fill="#FBB04C"/>
@@ -177,7 +178,7 @@ export default function AboutPage() {
 </svg>
 <div className='milestoneCard'>
    <h2>2023</h2>
-   <p>At the onset, parties in 7,257 pin codes saved INR 362 million in costs and 7.8 million days following record participation and settlements</p>
+   <p>18,38,456 negotiation workflows triggered and 1,65,791 disputes administered registered by 70+ enterprises and 5 courts</p>
 </div>
           </>  : <><MileStone_mobile/></>
         }
@@ -190,35 +191,79 @@ export default function AboutPage() {
           <h2 className='blue_heading'>ADVISORY COUNCIL</h2>
         </div>
         {
-           window.innerWidth > 600 ?  <div className='guide_body_wrap'>
-           <div className='guide_card'>
-               <img  src={Image2} alt='Justice B.N. Srikrishna'/>
-                 <h3 className='greyColor_text'>Justice B.N. Srikrishna</h3>
-                 <p className='greyColor_text'>Judge (Retd.) Supreme Court of India</p>
-               </div>
-               <div className='guide_card'>
+           window.innerWidth > 600 ?  
+           <div className='guide_body_wrap council'>
+            <div>
+            <div className="card"> <img  src={Image1} alt='Justice U.U. Lalit'/>
+    <div className="info">
+      <p>"While technology is changing the dispute resolution ecosystem, it must be backed by strong institutions running ethically and following due process. I am delighted to lend my support to an institution that is at the forefront of this"
+</p>
+
+
+    </div>
+  </div>
+  <h3 className='greyColor_text' style={{textAlign:"center",paddingTop:"1em",fontSize:"2vw"}}>Justice U. U. Lalit</h3>
+  <p className='greyColor_text' style={{textAlign:"center",paddingTop:".5em",fontSize:"1.2vw"}}>Former Chief Justice of india</p>
+            </div>
+ 
+
+   <div>
+   <div className="card"> <img  src={Image2} alt='Justice B.N. Srikrishna'/> 
+    <div className="info">
+      <p>"For India to become a hub of ADR, as is the ambition these days, it must focus on two things - institutions and ODR. Presolv360 is working at the intersection of both."
+</p>
+
+
+    </div>
+    
+  </div>
+  <h3 className='greyColor_text' style={{textAlign:"center",paddingTop:"1em",fontSize:"2vw"}}>Justice B. N. Srikrishna</h3>
+                 <p className='greyColor_text'style={{textAlign:"center",paddingTop:".5em",fontSize:"1.2vw"}}>Judge (Retd.) Supreme Court of India</p>
+   </div>
+ 
+  <div>
+  <div className="card"> <img  src={Image3} alt='Justice K. Kannan'/>
+    <div className="info">
+      <p>"To see this organisation grow from an idea disrupting the legal-tech ecosystem to now seeking to become a leading ADR institution is heartening. ODR institutions must not be looked at any differently from the likes of SIAC or closer home, Delhi International Arbitration Centre & others."
+</p>
+   
+    </div>
+
+  </div>
+  <h3 className='greyColor_text'style={{textAlign:"center",paddingTop:"1em",fontSize:"2vw"}}>Justice K. Kannan</h3>
+                 <p className='greyColor_text'style={{textAlign:"center",paddingTop:".5em",fontSize:"1.2vw"}}>Judge (Retd.) Punjab & Haryana High Court</p>
+    </div>
+ 
+
+
+               {/* <div className='guide_card'>
                  <img  src={Image1} alt='Justice U.U. Lalit'/>
-                 <h3 className='greyColor_text'>Justice U.U. Lalit</h3>
+                 <h3 className='greyColor_text'>Justice U. U. Lalit</h3>
                  <p className='greyColor_text'>Former Chief Justice of india</p>
                </div>
-              
+               <div className='guide_card'>
+               <img  src={Image2} alt='Justice B.N. Srikrishna'/>
+                 <h3 className='greyColor_text'>Justice B. N. Srikrishna</h3>
+                 <p className='greyColor_text'>Judge (Retd.) Supreme Court of India</p>
+               </div>
                <div className='guide_card'>
                <img  src={Image3} alt='Justice K. Kannan'/>
                  <h3 className='greyColor_text'>Justice K. Kannan</h3>
                  <p className='greyColor_text'>Judge (Retd.) Punjab & Haryana High Court</p>
-               </div>
-           </div> : <Slider {...settings} >
+               </div> */}
+          </div>
+            : <Slider {...settings} >
                 <div>
                 <div className='guide_card'>
                <img  src={Image2} alt='Justice B.N. Srikrishna'/>
-                 <h3 className='greyColor_text'>Justice B.N. Srikrishna</h3>
+                 <h3 className='greyColor_text'>Justice B. N. Srikrishna</h3>
                  <p className='greyColor_text'>Judge (Retd.) Supreme Court of India</p>
                </div>
                 </div>
                 <div>
                 <div className='guide_card'>
                  <img  src={Image1} alt='Justice U.U. Lalit'/>
-                 <h3 className='greyColor_text'>Justice U.U. Lalit</h3>
+                 <h3 className='greyColor_text'>Justice U. U. Lalit</h3>
                  <p className='greyColor_text'>Former Chief Justice of india</p>
                </div>
                 </div>
@@ -237,7 +282,7 @@ export default function AboutPage() {
 
 
         {
-           window.innerWidth > 600 ?  <div className='guide_body_wrap'>
+           window.innerWidth > 600 ?  <div className='guide_body_wrap advisoryBord'>
            <div className='guide_card'>
                <img  src={Pradeep} alt='Justice Pradeep Nandrajog'/>
                  <h3 className='greyColor_text'>Justice Pradeep Nandrajog</h3>
@@ -245,13 +290,13 @@ export default function AboutPage() {
                </div>
                <div className='guide_card'>
                  <img  src={Srinath} alt='Mr Srinath Sridharan'/>
-                 <h3 className='greyColor_text'>Mr Srinath Sridharan</h3>
+                 <h3 className='greyColor_text'>Mr. Srinath Sridharan</h3>
                  <p className='greyColor_text'>Corporate Leader, CXO Coach</p>
                </div>
               
                <div className='guide_card'>
                <img  src={Ashok} alt='Mr Ashok Barat'/>
-               <h3 className='greyColor_text'>Mr Ashok Barat</h3>
+               <h3 className='greyColor_text'>Mr. Ashok Barat</h3>
                  <p className='greyColor_text'>Former MD & CEO, Forbes & Company Ltd</p>
                </div>
            </div> : <Slider {...settings} >
@@ -265,13 +310,13 @@ export default function AboutPage() {
                 <div>
                 <div className='guide_card'>
                 <img  src={Srinath} alt='Mr Srinath Sridharan'/>
-                 <h3 className='greyColor_text'>Mr Srinath Sridharan</h3>
+                 <h3 className='greyColor_text'>Mr. Srinath Sridharan</h3>
                  <p className='greyColor_text'>Corporate Leader, CXO Coach</p>
                </div>
                 </div>
                 <div>  <div className='guide_card'>
                 <img  src={Ashok} alt='Mr Ashok Barat'/>
-               <h3 className='greyColor_text'>Mr Ashok Barat</h3>
+               <h3 className='greyColor_text'>Mr. Ashok Barat</h3>
                  <p className='greyColor_text'>Former MD & CEO, Forbes & Company Ltd</p>
                </div></div>
            </Slider>
@@ -279,41 +324,41 @@ export default function AboutPage() {
 
 
            {
-           window.innerWidth > 600 ?  <div className='guide_body_wrap'>
+           window.innerWidth > 600 ?  <div className='guide_body_wrap advisoryBord'>
            <div className='guide_card'>
                <img  src={Tanu} alt='Ms Tanu Mehta'/>
-                 <h3 className='greyColor_text'>Ms Tanu Mehta</h3>
+                 <h3 className='greyColor_text'>Ms. Tanu Mehta</h3>
                  <p className='greyColor_text'>Legal Counsel, Mediator and Conciliator</p>
                </div>
                <div className='guide_card'>
                  <img  src={Ankit} alt='Mr Ankit Sahni'/>
-                 <h3 className='greyColor_text'>Mr Ankit Sahni</h3>
+                 <h3 className='greyColor_text'>Mr. Ankit Sahni</h3>
                  <p className='greyColor_text'>Principal, Ajay Sahni Associates LLP </p>
                </div>
               
                <div className='guide_card'>
                <img  src={Raman} alt='Mr Raman Aggarwal'/>
-               <h3 className='greyColor_text'>Mr Raman Aggarwal</h3>
+               <h3 className='greyColor_text'>Mr. Raman Aggarwal</h3>
                  <p className='greyColor_text'>Director – FIDC, ST Consultant – World Bank </p>
                </div>
            </div> : <Slider {...settings} >
                 <div>
                 <div className='guide_card'>
                 <img  src={Tanu} alt='Ms Tanu Mehta'/>
-                 <h3 className='greyColor_text'>Ms Tanu Mehta</h3>
+                 <h3 className='greyColor_text'>Ms. Tanu Mehta</h3>
                  <p className='greyColor_text'>Legal Counsel, Mediator and Conciliator</p>
                </div>
                 </div>
                 <div>
                 <div className='guide_card'>
                 <img  src={Ankit} alt='Mr Ankit Sahni'/>
-                 <h3 className='greyColor_text'>Mr Ankit Sahni</h3>
+                 <h3 className='greyColor_text'>Mr. Ankit Sahni</h3>
                  <p className='greyColor_text'>Principal, Ajay Sahni Associates LLP </p>
                </div>
                 </div>
                 <div>  <div className='guide_card'>
                 <img  src={Raman} alt='Mr Raman Aggarwal'/>
-               <h3 className='greyColor_text'>Mr Raman Aggarwal</h3>
+               <h3 className='greyColor_text'>Mr. Raman Aggarwal</h3>
                  <p className='greyColor_text'>Director – FIDC, ST Consultant – World Bank </p>
                </div></div>
            </Slider>
@@ -321,9 +366,9 @@ export default function AboutPage() {
           
           <div className='advisory_wrap'>
           <div className='guide_card'>
-               <img  src={Rajni} alt='Late Ms Rajani Iyer' style={{width:"350px"}}/>
-                 <h3 className='greyColor_text'>Late Ms Rajani Iyer</h3>
-                 <p className='greyColor_text'>Former Advisor , Senior Counsel and Mediator </p>
+               <img  src={Rajni} alt='Late Ms Rajani Iyer' style={{width:"280px"}}/>
+                 <h3 className='greyColor_text'>Late Ms. Rajani Iyer</h3>
+                 <p className='greyColor_text'>Advisor, Senior Counsel and Mediator </p>
                </div>
           </div>
 

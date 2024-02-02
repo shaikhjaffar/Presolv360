@@ -23,20 +23,21 @@ export default function GuidedFinest() {
   return (
     <div className='section sec3'>
        <div className='section_heading'>
-          <h2 className='blue_heading'style={{color:"#fff",paddingTop:"1em"}}>Guided by the finest</h2>
+          <h2 className='blue_heading'style={{color:"#fff",paddingTop:"1em",paddingBottom:"0em"}}>ADVISORY COUNCIL</h2>
         </div>
         {
            window.innerWidth > 600 ?  <div className='guide_body_wrap'>
-           <div className='guide_card'>
-               <img  src={Image2} alt='Justice B.N. Srikrishna'/>
-                 <h3>Justice B.N. Srikrishna</h3>
-                 <p>Judge (Retd.) Supreme Court of India</p>
-               </div>
-               <div className='guide_card'>
+              <div className='guide_card'>
                  <img  src={Image1} alt='Justice U.U. Lalit'/>
-                 <h3>Justice U.U. Lalit</h3>
+                 <h3>Justice U. U. Lalit</h3>
                  <p>Former Chief Justice of india</p>
                </div>
+           <div className='guide_card'>
+               <img  src={Image2} alt='Justice B.N. Srikrishna'/>
+                 <h3>Justice B. N. Srikrishna</h3>
+                 <p>Judge (Retd.) Supreme Court of India</p>
+               </div>
+             
               
                <div className='guide_card'>
                <img  src={Image3} alt='Justice K. Kannan'/>
@@ -47,14 +48,14 @@ export default function GuidedFinest() {
                 <div>
                 <div className='guide_card'>
                <img  src={Image2} alt='Justice B.N. Srikrishna'/>
-                 <h3>Justice B.N. Srikrishna</h3>
+                 <h3>Justice B. N. Srikrishna</h3>
                  <p>Judge (Retd.) Supreme Court of India</p>
                </div>
                 </div>
                 <div>
                 <div className='guide_card'>
                  <img  src={Image1} alt='Justice U.U. Lalit'/>
-                 <h3>Justice U.U. Lalit</h3>
+                 <h3>Justice U. U. Lalit</h3>
                  <p>Former Chief Justice of india</p>
                </div>
                 </div>

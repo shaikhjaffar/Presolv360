@@ -1,0 +1,53 @@
+.pagination{
+    display: flex;
+  border: 2px solid var(--color_1);
+  width: max-content;
+
+}
+.page-item{
+    flex: 1;
+    padding: .5em 1em;
+    background-color: var(--color_1);
+    overflow: hidden;
+    transition: 1s all;
+    color: #fff;
+} 
+.pagination .active{
+    background-color: var(--color_2);
+}
+.poadcast_main_wrap{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6em;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+}
+.settel_wrap h2{
+    color: var(--Presolv360-Blue, #005186);
+    font-family: Montserrat;
+    font-size: 2.2vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    padding-bottom: 1em;
+}
+.settel_wrap p{
+     line-height: 140%;
+}
+.settel_wrap{
+    padding: 2em 10em;
+}
+@media screen and (max-width:600px) {
+    .settel_wrap h2{
+        text-align: center;
+        font-size: 24px;
+    }
+    .settel_wrap p {
+        text-align: center;
+        font-size: 16px;
+    }
+    .settel_wrap{
+        padding: 1em;
+    }
+}

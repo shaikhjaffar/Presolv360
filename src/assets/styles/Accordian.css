@@ -113,7 +113,9 @@
   place-items: center;
   gap: 3em;
 }
-
+#testim-content .sliderDots{
+  padding-top: 2em;
+}
 @media (max-width: 600px) {
   .accordian_section_wrap{
     grid-template-columns: 100%!important;

@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom'
 import LoginDropdown from '../LoginDropdown'
 export default function Hamburger() {
    const [offer,setoffer] = useState(false)
+   const [resource,setresource] = useState(false)
       function changeTheCheckbox ( ){
           const element = document.getElementById('hamburger')
            element.checked = false
@@ -33,9 +34,26 @@ export default function Hamburger() {
             </li>
       
             <li onClick={()=>{showDropDown('offer_drp')}}>
-              Our Offering
+              Solution
      {
        offer ?  <ul className='offer_drp_dwn' id='offer_drp'>
+        <NavLink onClick={changeTheCheckbox} exact  to="/OurOffering/negotiation">Negotiation</NavLink>
+        <NavLink onClick={changeTheCheckbox} exact  to="/OurOffering/arbitration">Arbitration</NavLink>
+        <NavLink onClick={changeTheCheckbox} exact  to="/OurOffering/mediation">Mediation</NavLink>
+        </ul> : <></>
+     }
+            
+            </li>
+            <li onClick={()=>{setresource(!resource)}}>
+              Our Offering
+     {
+       resource ?  <ul className='offer_drp_dwn' id='resource_drp'>
+        <NavLink onClick={changeTheCheckbox} exact  to="/OurOffering/negotiation">Negotiation</NavLink>
+        <NavLink onClick={changeTheCheckbox} exact  to="/OurOffering/arbitration">Arbitration</NavLink>
+        <NavLink onClick={changeTheCheckbox} exact  to="/OurOffering/mediation">Mediation</NavLink>
+        <NavLink onClick={changeTheCheckbox} exact  to="/OurOffering/negotiation">Negotiation</NavLink>
+        <NavLink onClick={changeTheCheckbox} exact  to="/OurOffering/arbitration">Arbitration</NavLink>
+        <NavLink onClick={changeTheCheckbox} exact  to="/OurOffering/mediation">Mediation</NavLink>
         <NavLink onClick={changeTheCheckbox} exact  to="/OurOffering/negotiation">Negotiation</NavLink>
         <NavLink onClick={changeTheCheckbox} exact  to="/OurOffering/arbitration">Arbitration</NavLink>
         <NavLink onClick={changeTheCheckbox} exact  to="/OurOffering/mediation">Mediation</NavLink>

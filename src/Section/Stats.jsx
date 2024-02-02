@@ -1,34 +1,40 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import StatsCard from '../components/card/StatsCard'
 import ScrollTrigger from 'react-scroll-trigger'
 import Slider from "react-slick";
-import Images1 from '../assets/Images/Med1.png'
+import Images1 from '../assets/Images/Bombay High Court.png'
 import Images2 from '../assets/Images/Med2.png'
-import Images3 from '../assets/Images/Med3.png'
+import Images3 from '../assets/Images/MOL.png'
+import Images4 from '../assets/Images/ONDC.png'
+import Images5 from '../assets/Images/Sahamati.png'
+import Images6 from '../assets/Images/CDSL.png'
+import Images7 from '../assets/Images/Kerala High court.png'
+import CountUp from "react-countup"
 import { useState } from 'react'
+import Marqueee from '../components/marquee';
 
- export const  CradDetail = [
+export const CradDetail = [
   {
-    records: 180000,
+    records: 1.2,
     description1: "Resolutions facilitated at",
     description2: "pre-litigation stage",
-    sign: " +"
+    sign: "$"
   },
   {
     records: 9300,
-    description1: "Pin codes  served",
+    description1: "PIN codes",
     description2: "served",
-    sign: " +"
+    sign: "+"
   },
   {
     records: 65,
-    description1: "Saving in time & cost from",
+    description1: "Saving in time and cost from",
     description2: "traditional resolution forums",
     sign: "%"
   }
   ,
   {
-    records: 40,
+    records: 7,
     description1: "Rise in participation from",
     description2: "offline to online proceedings",
     sign: "X"
@@ -46,132 +52,148 @@ export default function Stats() {
     autoplay: true,
     autoplaySpeed: 20000,
     arrows: false,
-    dotsClass:'sliderDots',
+    dotsClass: 'sliderDots',
     customPaging: i => (
       <div
       >
         {i + 1}
       </div>
-    )}
+    )
+  }
 
+  const Dataofmarquee = [
+    {
+      img: Images1,
 
+    },
+    {
+      img: Images2,
+    }, {
+      img: Images3,
+    }, {
+      img: Images4,
+
+    }, {
+      img: Images5,
+
+    }, {
+      img: Images6,
+
+    },
+    {
+      img: Images7,
+
+    },
+  ]
   return (
     <>
-     {
-       window.innerWidth > 600  ? <>   <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-       <div className='stats_wrap'>
+      {
+        window.innerWidth > 600 ? <>   <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+          <div className='stats_wrap'>
 
-         {
+            <div className='stats_card_wrap'>
+              <h3>
+                $
+                {counterOn && <CountUp start={0} end={1} duration={2} delay={0} />}
+                .2 Bn
+              </h3>
+
+              <p>disputes under</p>
+              <p>management</p>
+            </div>
+            <div className='stats_card_wrap'>
+              <h3>
+                {counterOn && <CountUp start={100} end={9300} duration={2} delay={0} />}
+                +
+              </h3>
+
+              <p>PIN codes</p>
+              <p>served</p>
+            </div>
+            <div className='stats_card_wrap'>
+              <h3>
+                {counterOn && <CountUp start={30} end={65} duration={2} delay={0} />}
+                %
+              </h3>
+
+              <p>savings in time</p>
+              <p>and cost</p>
+            </div>
+            <div className='stats_card_wrap'>
+              <h3>
+                {counterOn && <CountUp start={0} end={7} duration={2} delay={0} />}
+                X
+              </h3>
+
+              <p>increase in</p>
+              <p>participation</p>
+            </div>
+
+            {/* {
            CradDetail.map((ele) => {
              return (
                <StatsCard svg={ele.svg} records={ele.records} sign={ele.sign} counter={counterOn} description1={ele.description1} description2={ele.description2} />
              )
 
            })
-         }
-
-       </div>
-
-     </ScrollTrigger>  
-   
-      <Slider {...settings}>
-
-        <div>
-        <div className='section_heading'>
-        <h3 style={{fontSize:"1.8vw",color:"var(--color_1)"}}>Empanelled as a Mediation Institution with</h3>
-      </div>
-        <div className='stats_wrap' style={{paddingTop:"0",paddingLeft:"0"}}>
-        <div className='stats_card'>
-          <img src={Images1}  alt=""  />
-          <p>Main Mediation Centre </p>
-          <p>High Court of Bombay</p>
-        </div>
-        <div  className='stats_card'>
-          <img src={Images3} alt="" />
-          <p>Kerala State Mediation and Conciliation Centre </p>
-          <p>High Court of Kerala</p>
-          
-        </div>
-        <div  className='stats_card'>
-          <img src={Images2} alt="" />
-          <p>District Legal Services Authority </p>
-          <p>Mumbai & Dhule</p>
-        </div>
-   
-      </div>
-      </div>
-        <div>
-        <div className='stats_content'>
-        <div className='section_heading'>
-        <h3 style={{fontSize:"1.8vw",color:"var(--color_1)"}}>Empanelled as  an Online Dispute Resolution Service Provider with</h3>
-      </div>
-        <p><span className='highlight_blue'>Central Depository Services Limited</span>  to resolve
-          investor grievances under <span className='highlight_blue'> <br></br>Securities and Exchange Board of India’s </span> grievance redressal mechanism</p>
-        <p><span className='highlight_blue'> Open Network for Digital Commerce ecosystem</span></p>
-        <p><span className='highlight_blue'> Account Aggregator ecosystem </span> </p>
-      </div>
-        </div>
-   
-      </Slider> </> : <>  <div className='stats_wrap'> <Slider {...settings}>
-            {
-                CradDetail.map((ele) => {
-                    return (
-                        <div>
-<StatsCard svg={ele.svg} records={ele.records} sign={ele.sign} counter={true} description1={ele.description1} description2={ele.description2} />
-                        </div>
-                    )
-                })
-            }
-          
-        </Slider>
-        </div>
-        <div className='section_heading'>
-        <h3 style={{fontSize:"24px",color:"var(--color_1)",textAlign:"center"}}>Empanelled as a <br></br>Mediation Institution with</h3>
-      </div>
-        <Slider {...settings}>
-      
-          <div>
-          <div className='stats_card' style={{paddingBottom:"1em"}}>
-          <img src={Images1}  alt=""  />
-          <p>Main Mediation Centre </p>
-          <p>High Court of Bombay</p>
-        </div>
+         } */}
 
           </div>
-       <div>
-       <div  className='stats_card'>
-          <img src={Images3} alt="" />
-          <p>Kerala State Mediation and Conciliation Centre </p>
-          <p>High Court of Kerala</p>
-          
-        </div>
-       </div>
-       <div>
-       <div  className='stats_card'>
-          <img src={Images2} alt=""/>
-          <p>District Legal Services Authority </p>
-          <p>Mumbai & Dhule</p>
+
+        </ScrollTrigger>
+        </> : <>  <div className='stats_wrap'> <Slider {...settings}>
+
+          <div>
+            <div className='stats_card_wrap'>
+              <h3>
+                $ 1.2 Bn
+              </h3>
+              <p>disputes under</p>
+              <p>management</p>
+            </div>
+          </div>
+
+          <div><div className='stats_card_wrap'>
+            <h3>
+              9300+
+            </h3>
+
+            <p>PIN codes</p>
+            <p>served</p>
+          </div></div>
+          <div>
+            <div className='stats_card_wrap'>
+              <h3>
+                65
+                %
+              </h3>
+
+              <p>savings in time</p>
+              <p>and cost</p>
+            </div>
+          </div>
+          <div>
+            <div className='stats_card_wrap'>
+              <h3>
+                7X
+              </h3>
+
+              <p>increase in</p>
+              <p>participation</p>
+            </div>
+          </div>
+        </Slider>
         </div>
 
-       </div>
-     
-      </Slider>
-      <div className='section_heading'>
-        <h3 style={{fontSize:"24px",color:"var(--color_1)",textAlign:"center"}}>Empanelled as  an <br></br> Online Dispute Resolution Service Provider with</h3>
-      </div>
-      <div className='stats_content'>
-        <p><span className='highlight_blue'>Central Depository Services Limited</span>  to resolve
-          investor grievances under <span className='highlight_blue'> Securities and Exchange Board of India’s </span> grievance redressal mechanism</p>
-        <p> <span className='highlight_blue'> Open Network for Digital Commerce ecosystem</span></p>
-        <p><span className='highlight_blue'> Account Aggregator ecosystem </span> </p>
-      </div>
+
         </>
-     }
-    
-    
-   
-     
-
+      }
+      <div className='section_heading'>
+        <h2 className='blue_heading' >Recognition & Empanelment</h2>
+      </div>
+      <div style={{ padding: "1em", paddingBottom: "3em" }}>
+        <Marqueee data={Dataofmarquee} />
+      </div>
     </>
   )
 }

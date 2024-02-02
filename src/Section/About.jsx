@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
-
+import { NavLink } from 'react-router-dom'
 import Image1 from '../assets/Images/About Us 1.png'
 import Image2 from '../assets/Images/About Us 2 Image New.png'
 import Image3 from '../assets/Images/About Us 3 Image.png'
@@ -12,19 +12,19 @@ import ImageSequence from '../components/ImageSequence';
 
 const slides = [
   {
-    title: 'An automation powered online platform that is taking dispute resolution to the fingertips of businesses and individuals alike',
+    title: "India's leading platform that uses the power of technology and human expertise to deliver resolutions of your disputes",
     image: Image1,
   },
   {
-    title: 'Facilitated resolutions in financial, consumer, family, insurance, real estate and MSME disputes since inception',
+    title: 'Whether it is money recovery, property, insurance, employment or any other civil dispute, we have a solution for you',
     image: Image2,
   },
   {
-    title: 'The platform creates a level-playing field by promoting participation from remote locations and diverse socio-economic backgrounds',
+    title: 'Experience high resolution rates through participation across geographies and diverse socio-economic backgrounds ',
     image: Image3,
   },
   {
-    title: 'Resultantly, parties are able to achieve timely resolution of their dispute, while drastically reducing the cost involved in resolving them',
+    title: 'Achieve enforceable outcomes in a timely manner, while drastically reducing the cost in resolving your dispute',
     image:Image4,
   },
 ];
@@ -40,6 +40,7 @@ export default function About() {
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
+    lazyLoad:'ondemand',
     dotsClass:'sliderDots',
     customPaging: i => (
       <div
@@ -61,8 +62,8 @@ export default function About() {
            
             <div className='about_slide_main_wrap'>
      <div className='about_slide_content'>
-      <h2>{ele.title}</h2>                                     
-      <button className='orange_btn' style={{width:"120px"}}>Learn More</button>
+      <h2 >{ele.title}</h2>  
+      <NavLink exact  to="/About_us"><button className='orange_btn'>Learn More</button></NavLink>                                    
      </div>
      <div className='about_slide_img_wrap'>
       <img src={ele.image} alt='image' />

@@ -35,7 +35,7 @@ export default function Testimonal() {
                     <span>&#8220;</span>
                      <p> &nbsp;  &nbsp;  &nbsp;Most MSME’s are unaware of their legal rights and hence are unable to resolve disputes in an expedited fashion. We were also in the same boat, but Presolv360’s offering was just the solution we needed. The team was diligent and extremely helpful through the entire dispute resolution process, providing the support we needed to ensure a solution was found. Thanks to Presolv360, our longstanding dispute was resolved in a very short time. I sincerely hope Presolv360 will be able to work with more MSME’s to help resolve their disputes as well.  </p>   
                           <h5>Vaibhav Garg, Proprietor</h5>  
-                          <h5>M/s Jagdamba Agro Industries</h5>                 
+                          <h5>MSME Unit</h5>                 
                     </div>
         </div>
   

@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Slider from "react-slick";
 import './style.css'
 import StatsCard from '../card/StatsCard';
 import { CradDetail } from '../../Section/Stats';
+import Reveal from '../../utils/Reveal';
 export default function About_phoneSection({ data }) {
+   
+  
+
     const settings = {
         dots: true,
         infinite: true,
@@ -33,7 +37,7 @@ export default function About_phoneSection({ data }) {
 
                             <div className='about_mobile_section'>
                                 <h3>{element.title}</h3>
-                                <img src={element.image} style={{ width: "100%" }} />
+                                <img  src={element.image} style={{ width: "100%" }} />
                                 <button className='orange_btn'>Learn More</button>
                             </div>
                         </div>

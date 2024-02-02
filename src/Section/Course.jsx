@@ -11,8 +11,9 @@ export default function Course() {
              <img src={CourseMockup} style={{width:"85%"}} alt='Course_Mockup'/>
          </div>
          <div className='course_left_wrap'>
-           <h3 style={{color:"#fff"}} >Embark on a journey to become an ODR expert.  Join our exclusive certified course encapsulating mediation and arbitration in the metaverse, advanced dispute resolution tools, master classes by industry experts, and much more</h3>
-           <button className='orange_btn'>Enroll Now</button>
+           <h3 style={{color:"#fff"}} >Embark on a journey to become an ODR expert. Join our exclusive certified course encapsulating negotiation, mediation and arbitration in action, advanced dispute resolution tools, dispute resolution in the metaverse, master classes by industry experts, and much more...</h3>
+           
+           <a href='https://trainings.presolv360.com/' target='_blank' className='orange_btn'>Enroll Now</a>
          </div>
       </div>
     </div>

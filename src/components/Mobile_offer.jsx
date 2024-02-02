@@ -59,10 +59,9 @@ export default function Mobile_offer() {
                             </div>
                             <div className="answercont">
                                 <div className="answer">
-                                    <h3>Seamlessly negotiate and settle commercial disputes digitally</h3>
+                                    <h3>Negotiate seamlessly and settle disputes digitally</h3>
                                     <p>
-                                    Determine a settlement offer and propose it to the other party over digital channels along with the payment link. AI-driven negotiation of the settlement terms and provision to make payment. Close the dispute by executing a settlement agreement. Negotiating made simpler, accessible and intuitive.
-                                    </p>
+                                    Negotiate with counter-parties using our intuitive negotiation tools, multilingual chatbots, dynamic payment links, populate and exchange offers, and record terms in digital agreements                                    </p>
                                     <img src={Image1} alt="image1" style={{ width: "100%" }} />
                                 </div>
                             </div>
@@ -78,9 +77,9 @@ export default function Mobile_offer() {
                             </div>
                             <div className="answercont">
                                 <div className="answer">
-                                    <h3>Reach a mutually-beneficial outcome from the comfort of your home and workplace</h3>
+                                    <h3>Mutually-beneficial resolutions in a few clicks</h3>
                                     <p>
-                                    Attempt an amicable resolution of your dispute before knocking the doors of courts. With confidentiality and data security at the core of our platform, parties have leveraged our digital infrastructure and panel of mediators and obtained a resolution in as less as 30 days.                                                </p>     <img src={Image2} alt="image1" style={{ width: "100%" }} />   </div>
+                                    Leverage the power of mediation to amicably resolve your dispute and record terms in a binding settlement agreement / conciliation award facilitated by certified mediators and our powerful mediation platform                                                </p>     <img src={Image2} alt="image1" style={{ width: "100%" }} />   </div>
                             </div>
                         </div>
                         <div className="faq_container">
@@ -95,10 +94,9 @@ export default function Mobile_offer() {
                             <div className="answercont">
                                 <div className="answer">
                                     <h3>
-                                    Obtain an enforceable outcome by opting for institutional online arbitration
-                                    </h3>
+                                    Institutional e-arbitration for enforceable outcomes                                    </h3>
                                     <p>
-                                    Use smart case management tools, task automation, blockchain integration, digital signing & stamping, and many other powerful features and experience a digitized arbitration process.        </p>
+                                    While the institutional structure addresses all legal aspects, the platform ensures effective administration through AI-driven research, algorithmic case allocation, smart case management, task automation, digital awards, etc.        </p>
                                     <img src={Image3} alt="image1" style={{ width: "100%" }} />
                                 </div>
                             </div>

@@ -45,19 +45,20 @@
 .flip-card-back  p{
     display: flex;
   align-self: center;
-  padding:0 1em;
-   font-size: 1vw;
+  padding:1em 1em;
+  font-size: clamp(12px, 1.2vw, 16px);
   justify-content: center;
 }
 .flip-card-front h2{
     color: #454545;
     text-align: center;
     font-family: Montserrat;
-    font-size: 2vw;
+    font-size: clamp(18px, 2vw, 26px);
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 160%; /* 64px */
-    letter-spacing: -1px; 
+    letter-spacing: -1px;
+    padding: .5em;
 }
 .flip-card-front{
     background-color: #fff;

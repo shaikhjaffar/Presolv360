@@ -2,6 +2,7 @@ import React from 'react'
 import Modal from 'react-modal';
 import IntlTelInput from 'react-intl-tel-input';
 import 'react-intl-tel-input/dist/main.css';
+import { Bussiness } from '../service/StoreData';
 
 const customStyles = {
     content: {
@@ -20,7 +21,8 @@ const customStyles = {
 export default function EnquiryModal() {
 
     const [modalIsOpen, setIsOpen] = React.useState(false);
-  
+     const [formData,setFormData] = React.useState({})
+     const [number,setNumber] = React.useState()
     function openModal() {
       setIsOpen(true);
     }
@@ -29,6 +31,29 @@ export default function EnquiryModal() {
   
     function closeModal() {
       setIsOpen(false);
+    }
+  
+    
+  // handlePhoneChange = (status, phoneNumber, country) => {
+  //   console.log({ phoneNumber });
+  //   this.setState({ phoneNumber });
+  // };
+
+    const handleTelInput = (status, phoneNumber, country) => {
+       setNumber(`+${{country}.country.dialCode}${ phoneNumber }`)
+      //  console.log(`+${{country}.country.dialCode}${ phoneNumber }`)
+    };
+
+
+    function submitDetail () {
+      console.log({...formData,'number':number})
+      let newData = {...formData,'phone':number}
+    Bussiness(newData)
+    .then(response => console.log(response.status))
+    .catch((e)=>{
+      console.log({e})
+    })
+
     }
   return (
     <div>
@@ -49,19 +74,22 @@ export default function EnquiryModal() {
        <h2 className='modal_heading'>The time to try ODR is now.</h2>
        <p className='modal_des'>To know why and how, contact our team for more details.</p>
      
-         <input type="text" placeholder='Full Name' />
-         <input type="text" placeholder='Organization Name' />
+         <input type="text" placeholder='Full Name*' onChange={(e)=>{
+            setFormData({...formData,'name': e.target.value})
+         }} />
+         <input type="text" placeholder='Organization Name*'  onChange={(e)=>{
+            setFormData({...formData,'orgname': e.target.value}) }} />
          <IntlTelInput
       preferredCountries={['in']}
       separateDialCode={true}
       autoPlaceholder={false}
+      showSelectedDialCode= {true}
       placeholder="Mobile Number"
       style={{width:"100%"}}
-    //   onPhoneNumberChange={onChange()}
-    //   onPhoneNumberBlur={onBlur()}
-    />
-         <input type="email" placeholder='Work Email ID ( xxxxxxx@company.com )' />
-      <button className='orange_btn' style={{maxWidth:"45%"}}>Reach out to us</button>
+      onPhoneNumberChange={handleTelInput}
+  />
+         <input type="email" placeholder='Work Email ID*'  onChange={(e)=>{ setFormData({...formData,'email': e.target.value}) }} />
+      <button className='orange_btn' onClick={submitDetail} style={{maxWidth:"180px"}}>Reach out to us</button>
         </div>
 
     </Modal>

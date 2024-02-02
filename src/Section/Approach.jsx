@@ -45,7 +45,7 @@ export default function Approach() {
     return (
         <div className='accordian_section section'>
             <div className='section_heading'>
-                <h2 className='blue_heading'>360-degree approach to dispute resolution </h2>
+                <h2 className='blue_heading'>360° approach to dispute resolution </h2>
             </div>
             <div className='accordian_section_body' >
                 <div className='accordian_section_wrap' style={{ gridTemplateColumns: "45% 45%" }}>
@@ -72,7 +72,7 @@ export default function Approach() {
                         <div className="faq_container">
                             <div className="faq_question" id='approach_child_2' data="1" onClick={() => { showDataAccordian('approach_child_2') }}>
                                 <div className="faq_question-text">
-                                    <h3>Process automation and standardization</h3>
+                                    <h3>Process automation</h3>
                                 </div>
                                 <div className="icon">
                                     <div className="icon-shape"></div>
@@ -81,14 +81,14 @@ export default function Approach() {
                             <div className="answercont">
                                 <div className="answer">
                                     <p>
-                                        Legal processes can get lengthy and tedious. Leverage automation and templatization to experience a consistent, fair and, simple resolution experience
+                                        Legal processes can get lengthy and tedious. Leverage automation and workflow management to experience a consistent, fair and simple resolution process
                                     </p>     <img src={Image2} alt="image1" style={{ width: "100%" }} />   </div>
                             </div>
                         </div>
                         <div className="faq_container">
                             <div className="faq_question" id='approach_child_3' data="2" onClick={() => { showDataAccordian('approach_child_3') }}>
                                 <div className="faq_question-text">
-                                    <h3>Omni-channel communications infrastructure</h3>
+                                    <h3>Omni-channel communications</h3>
                                 </div>
                                 <div className="icon">
                                     <div className="icon-shape"></div>
@@ -97,7 +97,7 @@ export default function Approach() {
                             <div className="answercont">
                                 <div className="answer">
                                     <p>
-                                        Communication is the bridge between dispute and resolution. Our multi-channel integration and multilingual capabilities enable participation, even from the remotest part       </p>
+                                        Communication is the bridge between dispute and resolution. Our multi-channel integration and multilingual capabilities enable participation, even from the remotest geographies       </p>
                                         <img src={Image3} alt="image1" style={{ width: "100%" }} />
                                 </div>
                             </div>
@@ -114,8 +114,7 @@ export default function Approach() {
                             <div className="answercont">
                                 <div className="answer">
                                     <p>
-                                        Considering the sensitivity of data, we are ISO-certified, GDPR-compliant, and in congruence with data protection laws, enhancing trust and stickiness of users
-                                    </p>   <img src={Image4} alt="image1" style={{ width: "100%" }} />     </div>
+                                    Data privacy and security is at the heart of our functioning. We are ISO-certified, GDPR-compliant and in congruence with data protection laws, thereby enhancing trust                                  </p>   <img src={Image4} alt="image1" style={{ width: "100%" }} />     </div>
                             </div>
                         </div>
                     </div>

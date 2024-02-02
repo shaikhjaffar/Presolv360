@@ -119,7 +119,7 @@ a{
   background-color: var(--color_1);
 }
 #nav_enq_btn{
-  visibility: hidden;
+  /* visibility: hidden; */
  transition: 1s all ease-in;
 }
 .intl-tel-input .country-list{
@@ -146,11 +146,12 @@ a{
 .login_drp_dwn_wrap{
   position: absolute;
   right: 0;
-  transform: translateY(33%);
+  transform: translateY(50%);
   background-color: #fff;
   border-radius: 8px;
   transition: 1s ease-in all;
   box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 24px 8px;
+  margin-right: 4%;
 }
 .login_drp_dwn_wrap li a{
     text-decoration: none;

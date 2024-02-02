@@ -11,49 +11,50 @@ import Image5 from '../../assets/Images/Mediation/Property 1=Data Secured.png'
 import Image6 from '../../assets/Images/Mediation/Property 1=Resolution.png'
 import Image7 from '../../assets/Images/Mediation/Property 1=Settlement.png'
 import Slider from 'react-slick'
+import AnimatedBox from '../../components/AnimatedBox'
 export default function Mediation() {
     const fields = {
         years_timeline: [
             {
                  steps:1,
-               tittle:"Registration of Dispute",
-               description:"Initiate your path to resolution by registering your dispute. Integration, automation, and administrative team will ensure a hassle-free process. ",
+               tittle:"Registration",
+               description:"Register your dispute to initiate the mediation process",
                image:Image1,
             },
             {
                 steps :2,
-                tittle:"Verification and Approval",
-               description:"Auto-verification of dispute data to weed out any discrepancy and approval.",
+                tittle:"Verification",
+               description:"Auto-verification of dispute data to weed out any discrepancies",
                image:Image2,
             },
             {
                 steps :3,
-                tittle:"Invitation to Mediate and Consent of Parties",
-                description:"An invitation to mediate is transmitted to all disputing parties digitally, and consent to participate is sought.",
+                tittle:"Invitation",
+                description:"Invitation to mediate sent to the other party by email, SMS, WhatsApp, IVR, post",
                 image:Image3,
             },
             {
                 steps :4,
-                tittle:"Appointment of Mediator",
-                description:"Based on the nature, complexity and quantum of dispute a mediator is algorithmically assigned from a broad-based panel of experts.",
+                tittle:"Assignment",
+                description:"Based on the nature of the dispute, a certified expert mediator is algorithmically assigned",
                 image:Image4,
             },
             {
                 steps :5,
-                tittle:"Secure Data Sharing",
-                description:"Leverage data sharing and other tools to upload and share documents with the intended parties. ",
+                tittle:"Upload",
+                description:"Share data and documents confidentially with the intended recipients ",
                 image:Image5,
             },
             {
                 steps :6,
-                tittle:"Resolution",
-                description:"Participate in a virtual mediation session facilitated by the mediator via a secure video conferencing application. ",
+                tittle:"Sessions",
+                description:"Participate in mediation sessions via secure video conferencing",
                 image:Image6,
             },
             {
                 steps :7,
-                tittle:"Settlement Agreement",
-                description:"Upon successful resolution, the platform facilitates the execution of the settlement report via secure e-signatures.",
+                tittle:"Resolution",
+                description:"Digitally stamp and sign settlement agreement upon successful resolution",
                 image:Image7,
             }
         ]
@@ -77,13 +78,14 @@ export default function Mediation() {
   return (
     <div className='offeringpage'>
 
-   
+<div className='firstBreak'> 
     <section className='landing_wrap'>
         <h1>
-        Foster amicable resolutions with ease and <br></br>efficiency, anytime, anywhere.
+        Foster amicable resolutions with ease and <br></br>efficiency, anytime, anywhere
         </h1>
          <h3>
          Embrace a seamless mediation experience on our <br></br>platform that blends technology and human intelligence <br></br> to transform disputes into constructive dialogues</h3>
+         <AnimatedBox/>
     </section>
     <div className='section_heading'>
           <h2 className='blue_heading'>PROCESS FLOW</h2>
@@ -95,7 +97,7 @@ export default function Mediation() {
              <Timeline fields={fields} />
         </section>
         <div className='section_heading'>
-          <h2 className='blue_heading'>ADVANTAGES OF MEDIATION</h2>
+          <h2 className='blue_heading'>ADVANTAGES</h2>
         </div>
         <Slider {...settings}>
           <div>
@@ -104,16 +106,16 @@ export default function Mediation() {
                 <h2>Recognition</h2>
               </div>
               <div className='offer_adv_desc'>
-                 <p>Presolv360 is empanelled as a Mediation Institute facilitating online mediation by over five courts across the country</p>
+                 <p>Presolv360 is empanelled as a Mediation Institute facilitating online mediation by various courts in India</p>
               </div>
             </div>
           </div>
           <div>  <div className='offer_advantage_main_wrap'>
-              <div className='offer_adv_title'>
-                <h2>Digitization</h2>
+              <div className='offer_adv_title'style={{borderColor:"var(--color_2)"}}>
+                <h2 style={{color:"var(--color_2)"}}>Digitization</h2>
               </div>
-              <div className='offer_adv_desc'>
-                 <p>Adieu to physical files and offline processes. Experience dispute management and resolution on cloud.</p>
+              <div className='offer_adv_desc'style={{backgroundColor:"var(--color_2"}}>
+                 <p>Adieu to physical files and offline processes. Experience dispute management and resolution on cloud</p>
               </div>
             </div></div>
           <div>  <div className='offer_advantage_main_wrap'>
@@ -121,60 +123,41 @@ export default function Mediation() {
                 <h2>Experts</h2>
               </div>
               <div className='offer_adv_desc'>
-                 <p>Leverage our panel of retired judges, renowned mediators, senior advocates, and subject matter experts for an amicable outcome.
+                 <p>Leverage our panel of retired judges, renowned mediators, senior advocates, and subject matter experts for an amicable outcome
 </p>
               </div>
             </div></div>
           <div>  <div className='offer_advantage_main_wrap'>
-              <div className='offer_adv_title'>
-                <h2>Support</h2>
+              <div className='offer_adv_title'style={{borderColor:"var(--color_2)"}}>
+                <h2 style={{color:"var(--color_2)"}}>Support</h2>
               </div>
-              <div className='offer_adv_desc'>
-                 <p>Administrative team to assist parties throughout the dispute resolution journey. </p>
+              <div className='offer_adv_desc'style={{backgroundColor:"var(--color_2"}}>
+                 <p>Administrative and technical assistance to parties throughout the resolution journey </p>
               </div>
             </div></div>
         </Slider>
  </>: <>
          <div className='Mobile_core_wrap'> 
-        <div className='core_mobile_card'>
-    <h3>1. Registration of Dispute</h3>
-    <p>Initiate your path to resolution by registering your dispute. Integration, automation, and administrative team will ensure a hassle-free process</p>
-  </div>
-  <div className='core_mobile_card'>
-    <h3>2. Verification and Approval</h3>
-    <p>Auto-verification of dispute data to weed out any discrepancy and approval</p>
-  </div>
-  <div className='core_mobile_card'>
-    <h3>3. Invitation to Mediate and Consent of Parties
-</h3>
-    <p>An invitation to mediate is transmitted to all disputing parties digitally, and consent to participate is sought</p>
-  </div>
-  <div className='core_mobile_card'>
-    <h3>4. Appointment of Mediator</h3>
-    <p>Based on the nature, complexity and quantum of dispute a mediator is algorithmically assigned from a broad-based panel of experts</p>
-  </div>
-  <div className='core_mobile_card'>
-    <h3>5. Secure Data Sharing</h3>
-    <p>Leverage data sharing and other tools to upload and share documents with the intended parties</p>
-  </div>
-  <div className='core_mobile_card'>
-    <h3>6. Resolution</h3>
-    <p>Participate in a virtual mediation session facilitated by the mediator via a secure video conferencing application</p>
-  </div>
-  <div className='core_mobile_card'>
-    <h3>7. Settlement Agreement</h3>
-    <p>Upon successful resolution, the platform facilitates the execution of the settlement report via secure e-signatures</p>
-  </div>
+         {
+           fields.years_timeline.map((ele)=>{
+              return (
+                <div className='core_mobile_card'>
+                <h3>{`${ele.steps}. `}  {ele.tittle}</h3>
+                <p>{ele.description}</p>
+              </div>
+              )
+        
+           })
+         }
   </div>
   <section className='milestonesection' style={{backgroundColor:"var(--color_1)",padding:"2em 1em 4em 1em"}}>
         <div className='section_heading'>
-          <h2 className='blue_heading'style={{color:"#fff"}}>ADVANTAGES OF
-MEDIATION</h2>
+          <h2 className='blue_heading'style={{color:"#fff"}}>ADVANTAGES</h2>
         </div>
         <div className='Mobile_milestone_wrap'> 
     <div className='core_mobile_card'>
 <h3>1. Recognition</h3>
-<p>Presolv360 is empanelled as a Mediation Institute facilitating online mediation by over 5 courts across the country</p>
+<p>Presolv360 is empanelled as a Mediation Institute facilitating online mediation by various courts in India</p>
 </div>
 <div className='core_mobile_card'>
 <h3>2. Digitization</h3>
@@ -182,11 +165,12 @@ MEDIATION</h2>
 </div>
 <div className='core_mobile_card'>
 <h3>3. Experts</h3>
-<p>Leverage our panel of retired judges, renowned mediators, senior advocates, and subject matter experts for an amicable outcome</p>
+<p>Leverage our panel of retired judges, renowned mediators, senior advocates, and subject matter experts for an amicable outcome
+</p>
 </div>
 <div className='core_mobile_card'>
 <h3>4. Support</h3>
-<p>Administrative team to assist parties throughout the dispute resolution journey</p>
+<p>Administrative and technical assistance to parties throughout the resolution journey </p>
 </div>
 </div>
         
@@ -195,14 +179,16 @@ MEDIATION</h2>
          </>
       
     }
+    </div>
             <div className='section_heading'>
-          <h2 className='blue_heading'>CASE STUDIES</h2>
+          <h2 className='blue_heading'>CASE STUDY</h2>
         </div>
          <div className='caseStudy_wrap'>
             <div className='caseStudy_content'>
-              <h2>Courts Partnering to reduce case backlog and increase access to justice</h2>
+              <h2>How courts are partnering to reduce case backlog and increase access to justice</h2>
                {
-                window.innerWidth > 600 && <><button className='blue_btn'>Watch the Demo</button>
+                window.innerWidth > 600 && <>
+                {/* <button className='blue_btn'>Watch the Demo</button> */}
                 <button   className='orange_btn' >Get Started</button></> 
                }
               
@@ -211,13 +197,15 @@ MEDIATION</h2>
               <img src={Case1} alt='case1'/>
             </div>
             {
-                window.innerWidth < 600 && <><button className='blue_btn'>Watch the Demo</button>
+                window.innerWidth < 600 && <>
+                {/* <button className='blue_btn'>Watch the Demo</button> */}
                 <button   className='orange_btn' >Get Started</button></> 
                }
          </div>
          <div className='caseStudy_wrap case2'>
          {
-                window.innerWidth < 600 && <><button className='blue_btn'>Watch the Demo</button>
+                window.innerWidth < 600 && <>
+                {/* <button className='blue_btn'>Watch the Demo</button> */}
                 <button   className='orange_btn' >Get Started</button></> 
                }
             <div className='caseStudy_img'>
@@ -225,9 +213,10 @@ MEDIATION</h2>
             </div>
          
             <div className='caseStudy_content'>
-              <h2>One of India’s private sector banks adopted ODR and experienced record results.</h2>
+              <h2>How India's leading bank is leveraging online mediation and experiencing record results</h2>
               {
-                window.innerWidth > 600 && <><button className='blue_btn'>Watch the Demo</button>
+                window.innerWidth > 600 && <>
+                {/* <button className='blue_btn'>Watch the Demo</button> */}
                 <button   className='orange_btn' >Get Started</button></> 
                }
             </div>

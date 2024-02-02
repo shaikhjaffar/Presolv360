@@ -1,9 +1,10 @@
 .event_gallery_wrap{
    display: grid;
-   grid-template-columns: 40% 40%;
+   grid-template-columns: 50% 50%;
    gap: 1em;
-    padding: 1em;
+    padding: 4em;
     width: 100%;
+    cursor: url('../assets/Images/Vector.png'),auto;
 }
 .gallery_child{
     border-radius: 16px;
@@ -11,6 +12,11 @@ background: #005186;
 box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
 text-align:center ;
 color: #ffff;
+object-fit: cover;
+  display: grid;
+  place-items: center;
+padding: 1em;
+  gap: .5em;
 
 }
 .gallery_child:first-child,.gallery_child:last-child{
@@ -63,4 +69,70 @@ li.dropdown {
   
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+  .newsletter_wrap{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     row-gap: 1em;
+     padding-bottom: 2em;
+  }
+  .newsletter_wrap h3{
+    color: var(--Presolv360-Blue, #005186);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 67.2px */
+  }
+  .newsletter_wrap p{
+    color: #262626;
+    text-align: center;
+    /* Text Style 1 */
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    width: 60%;
+  }
+  .newsletter_wrap input{
+    border-radius: 8px;
+border: 2px solid #FBB04C;
+display: inline-flex;
+justify-content: center;
+align-items: center; 
+width: 250px;
+padding: 1em;
+text-align: center;
+  }
+  .casedetailwrap{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     row-gap: 2em;
+  }
+  .casedetailwrap img{
+     width: 70%;
+  }
+  .casedetailwrap h3 {
+    color:  #005186;
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -1.8px;
+  }
+  .casedetailwrap p{
+    color: #262626;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 38.4px */
+  }
+  .advisoryBord .guide_card img{
+    width: 70%;
   }
